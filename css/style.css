@@ -34,6 +34,7 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 @import url("https://fonts.googleapis.com/css?family=Cantata+One|Great+Vibes|Open+Sans:300,400,400i,600,600i,700,800");
+
 .col-md-offset-right-1 {
   margin-right: 8.33333333%;
 }
@@ -50,7 +51,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -64,7 +66,14 @@ body {
   font-size: 15px;
 }
 
-body, p, h1, h2, h3, h4, h5, h6 {
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
   padding: 0px;
 }
@@ -108,12 +117,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.s_black_title h3 {
-  font-size: 36px;
-  font-family: "Great Vibes", cursive;
-  color: #b10400;
-}
-
 .s_black_title h2 {
   font-size: 36px;
   font-family: "Cantata One", serif;
@@ -150,11 +153,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.s_black_title h3 {
-  font-size: 36px;
-  font-family: "Great Vibes", cursive;
-  color: #b10400;
-}
 
 .s_black_title h2 {
   font-size: 36px;
@@ -225,15 +223,18 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 @-webkit-keyframes BoxFlip {
+
   25%,
   50% {
     -webkit-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
   }
+
   75% {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
   }
+
   0%,
   75.01%,
   100% {
@@ -243,15 +244,18 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes BoxFlip {
+
   25%,
   50% {
     -webkit-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
   }
+
   75% {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
   }
+
   0%,
   75.01%,
   100% {
@@ -331,7 +335,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   padding-right: 5px;
 }
 
-.first_header .header_contact_details a + a {
+.first_header .header_contact_details a+a {
   padding-right: 0px;
 }
 
@@ -452,11 +456,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border: 1px solid #b10400;
 }
 
-.main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li:hover a, .main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li.active a {
+.main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li:hover a,
+.main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li.active a {
   color: #b10400;
 }
 
-.main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li:hover a:before, .main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li.active a:before {
+.main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li:hover a:before,
+.main_menu_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li.active a:before {
   background: transparent;
   border: 1px solid #b10400;
 }
@@ -886,7 +892,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 55px;
 }
 
-.feature_slider .owl-prev, .feature_slider .owl-next {
+.feature_slider .owl-prev,
+.feature_slider .owl-next {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -902,7 +909,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   background: #b10400;
 }
 
-.feature_slider .owl-prev:before, .feature_slider .owl-next:before {
+.feature_slider .owl-prev:before,
+.feature_slider .owl-next:before {
   content: '';
   position: absolute;
   top: 0;
@@ -918,7 +926,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
-.feature_slider .owl-prev:after, .feature_slider .owl-next:after {
+.feature_slider .owl-prev:after,
+.feature_slider .owl-next:after {
   content: '';
   position: absolute;
   top: 0;
@@ -938,19 +947,22 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
-.feature_slider .owl-prev:hover, .feature_slider .owl-next:hover {
+.feature_slider .owl-prev:hover,
+.feature_slider .owl-next:hover {
   color: #b10400;
   background: transparent;
 }
 
-.feature_slider .owl-prev:hover:before, .feature_slider .owl-next:hover:before {
+.feature_slider .owl-prev:hover:before,
+.feature_slider .owl-next:hover:before {
   opacity: 0;
   -webkit-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
 }
 
-.feature_slider .owl-prev:hover:after, .feature_slider .owl-next:hover:after {
+.feature_slider .owl-prev:hover:after,
+.feature_slider .owl-next:hover:after {
   opacity: 1;
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -1441,7 +1453,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   transition: all 400ms linear 0s;
 }
 
-.most_popular_item_area .popular_filter li:hover a, .most_popular_item_area .popular_filter li.active a {
+.most_popular_item_area .popular_filter li:hover a,
+.most_popular_item_area .popular_filter li.active a {
   background: #111111;
   border-color: #fff;
   color: #fff;
@@ -1676,7 +1689,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-.chefs_slider_active .owl-prev, .chefs_slider_active .owl-next {
+.chefs_slider_active .owl-prev,
+.chefs_slider_active .owl-next {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1692,7 +1706,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   background: #b10400;
 }
 
-.chefs_slider_active .owl-prev:before, .chefs_slider_active .owl-next:before {
+.chefs_slider_active .owl-prev:before,
+.chefs_slider_active .owl-next:before {
   content: '';
   position: absolute;
   top: 0;
@@ -1708,7 +1723,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
-.chefs_slider_active .owl-prev:after, .chefs_slider_active .owl-next:after {
+.chefs_slider_active .owl-prev:after,
+.chefs_slider_active .owl-next:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1728,19 +1744,22 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
-.chefs_slider_active .owl-prev:hover, .chefs_slider_active .owl-next:hover {
+.chefs_slider_active .owl-prev:hover,
+.chefs_slider_active .owl-next:hover {
   color: #b10400;
   background: transparent;
 }
 
-.chefs_slider_active .owl-prev:hover:before, .chefs_slider_active .owl-next:hover:before {
+.chefs_slider_active .owl-prev:hover:before,
+.chefs_slider_active .owl-next:hover:before {
   opacity: 0;
   -webkit-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
 }
 
-.chefs_slider_active .owl-prev:hover:after, .chefs_slider_active .owl-next:hover:after {
+.chefs_slider_active .owl-prev:hover:after,
+.chefs_slider_active .owl-next:hover:after {
   opacity: 1;
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -1943,7 +1962,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   transition: all 400ms linear 0s;
 }
 
-.next_event_area .next_event_slider .owl-controls .owl-dots .owl-dot:hover, .next_event_area .next_event_slider .owl-controls .owl-dots .owl-dot.active {
+.next_event_area .next_event_slider .owl-controls .owl-dots .owl-dot:hover,
+.next_event_area .next_event_slider .owl-controls .owl-dots .owl-dot.active {
   background: #b10400;
 }
 
@@ -2342,7 +2362,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   transition: all 400ms linear 0s;
 }
 
-.blog_pagination .pagination li:hover a, .blog_pagination .pagination li.active a {
+.blog_pagination .pagination li:hover a,
+.blog_pagination .pagination li.active a {
   background: #b10400;
   color: #fff;
 }
@@ -2453,7 +2474,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
-.blog_gallery_item.row.m0 .blog_date .media .media-left h4 + h4 {
+.blog_gallery_item.row.m0 .blog_date .media .media-left h4+h4 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -3295,7 +3316,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   line-height: 26px;
 }
 
-.contact_area .contact_details p + p {
+.contact_area .contact_details p+p {
   padding-top: 25px;
   padding-bottom: 35px;
 }
@@ -3805,7 +3826,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;
 }
 
-.copy_right_area .pull-right .navbar-nav.navbar-right li.active a, .copy_right_area .pull-right .navbar-nav.navbar-right li:hover a {
+.copy_right_area .pull-right .navbar-nav.navbar-right li.active a,
+.copy_right_area .pull-right .navbar-nav.navbar-right li:hover a {
   color: #b10400;
 }
 
@@ -3852,3 +3874,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+/*# My css */
+
+
+.s_black_title h3 {
+  font-size: 56px;
+  font-family: "Great Vibes", cursive;
+  color: #b10400;
+}

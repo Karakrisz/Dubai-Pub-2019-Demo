@@ -1,20 +1,21 @@
-;(function($) {
+;
+(function ($) {
     "use strict";
-  
+
     /*----------------------------------------------------*/
     /*  Home Slider js
     /*----------------------------------------------------*/
-    function home_slider(){
-        if ( $('#home-slider').length ){
+    function home_slider() {
+        if ($('#home-slider').length) {
             $("#home-slider").revolution({
-                sliderType:"fullscreen",
-                sliderLayout:"false",
-                delay:9000,
-                disableProgressBar:"on",
+                sliderType: "fullscreen",
+                sliderLayout: "false",
+                delay: 9000,
+                disableProgressBar: "on",
                 navigation: {
                     onHoverStop: 'off',
-                    touch:{
-                        touchenabled:"on"
+                    touch: {
+                        touchenabled: "on"
                     },
                     arrows: {
                         style: "Gyges",
@@ -34,136 +35,136 @@
                             v_offset: 30
                         }
                     },
-                },			
-                responsiveLevels:[4096,1200,992,768,480,380],
-                gridwidth:[1140,940,720,450,450,290],
-                gridheight:[900,900,800,700,500,480],
-                lazyType:"none",
+                },
+                responsiveLevels: [4096, 1200, 992, 768, 480, 380],
+                gridwidth: [1140, 940, 720, 450, 450, 290],
+                gridheight: [900, 900, 800, 700, 500, 480],
+                lazyType: "none",
                 parallax: {
-                    type:"mouse",
-                    origo:"slidercenter",
-                    speed:2000,
-                    levels:[2,3,4,5,6,7,12,16,10,50],
+                    type: "mouse",
+                    origo: "slidercenter",
+                    speed: 2000,
+                    levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
                 },
             })
         }
     }
     home_slider();
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* Optional js */
-    
+
     /*----------------------------------------------------*/
     /*  Blog Slider
     /*----------------------------------------------------*/
-    function blog_slider(){
-        if ( $('.feature_slider').length ){
+    function blog_slider() {
+        if ($('.feature_slider').length) {
             $('.feature_slider').owlCarousel({
-                loop:true,
-                margin:30,
+                loop: true,
+                margin: 30,
                 items: 3,
-                nav:true,
+                nav: true,
                 autoplay: false,
                 smartSpeed: 1800,
                 navContainer: '.feature_slider',
-                navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
-                responsive:{
-                    0:{
-                        items:1
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    480:{
-                        items:2
+                    480: {
+                        items: 2
                     },
-                    768:{
-                        items:3
+                    768: {
+                        items: 3
                     }
                 }
             })
         }
     }
     blog_slider();
-    
-    
+
+
     /*----------------------------------------------------*/
     /*  Chef Slider
     /*----------------------------------------------------*/
-    function chefs_slider(){
-        if ( $('.chefs_slider_active').length ){
+    function chefs_slider() {
+        if ($('.chefs_slider_active').length) {
             $('.chefs_slider_active').owlCarousel({
-                loop:true,
-                margin:30,
+                loop: true,
+                margin: 30,
                 items: 4,
-                nav:true,
+                nav: true,
                 autoplay: false,
                 smartSpeed: 1800,
                 navContainer: '.chefs_slider_active',
-                navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
-                responsive:{
-                    0:{
-                        items:1
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    550:{
-                        items:2
+                    550: {
+                        items: 2
                     },
-                    768:{
-                        items:3
+                    768: {
+                        items: 3
                     },
-                    992:{
-                        items:4
+                    992: {
+                        items: 4
                     }
                 }
             })
         }
     }
-    chefs_slider(); 
-    
+    chefs_slider();
+
     /*----------------------------------------------------*/
     /*  Next Event Slider
     /*----------------------------------------------------*/
-    function next_event_slider(){
-        if ( $('.next_event_slider').length ){
+    function next_event_slider() {
+        if ($('.next_event_slider').length) {
             $('.next_event_slider').owlCarousel({
-                loop:true,
-                margin:30,
+                loop: true,
+                margin: 30,
                 items: 1,
-                nav:false,
+                nav: false,
                 autoplay: false,
                 smartSpeed: 1800,
             })
         }
     }
-    next_event_slider(); 
-    
+    next_event_slider();
+
     /*----------------------------------------------------*/
     /*  Blog Gallery Slider
     /*----------------------------------------------------*/
-    function blog_gallery_slider(){
-        if ( $('.blog_gallery_slider').length ){
+    function blog_gallery_slider() {
+        if ($('.blog_gallery_slider').length) {
             $('.blog_gallery_slider').owlCarousel({
-                loop:true,
-                margin:0,
+                loop: true,
+                margin: 0,
                 items: 1,
-                nav:true,
+                nav: true,
                 autoplay: false,
                 smartSpeed: 1800,
                 navContainer: '.blog_gallery_slider',
-                navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
             })
         }
     }
-    blog_gallery_slider(); 
-    
+    blog_gallery_slider();
+
     /*----------------------------------------------------*/
     /*  Date Active function
     /*----------------------------------------------------*/
@@ -174,7 +175,7 @@
         todayBtn: true,
         pickerPosition: "bottom-right"
     });
-    
+
     /*----------------------------------------------------*/
     /*  Time Active function
     /*----------------------------------------------------*/
@@ -187,33 +188,33 @@
         startView: 2,
         pickerPosition: "bottom-right"
     });
-    
-    
+
+
     /*----------------------------------------------------*/
     /*  Popular Recype Activate isotope in container
     /*----------------------------------------------------*/
-    function popular_recype(){
-        if ( $('.p_recype_item_inner').length ){
-            $('.p_recype_item_inner').imagesLoaded(function(){
+    function popular_recype() {
+        if ($('.p_recype_item_inner').length) {
+            $('.p_recype_item_inner').imagesLoaded(function () {
                 $('.p_recype_item_inner').isotope({
                     itemSelector: '.portfolio-g .col-md-6',
                     layoutMode: 'fitRows',
-                    percentPosition:true,
+                    percentPosition: true,
                     masonry: {
                         columnWidth: 1,
-                    }            
+                    }
                 })
             });
         }
     }
     popular_recype();
-    
+
     /*----------------------------------------------------*/
     /*  Popular Recype Activate isotope click function
     /*----------------------------------------------------*/
-    function popular_recype_click(){
-        if ( $('.popular_filter').length ){
-            jQuery(".popular_filter li").click(function(){
+    function popular_recype_click() {
+        if ($('.popular_filter').length) {
+            jQuery(".popular_filter li").click(function () {
                 jQuery(".popular_filter li").removeClass("active");
                 jQuery(this).addClass("active");
 
@@ -221,9 +222,9 @@
                 jQuery(".p_recype_item_active").isotope({
                     filter: selector,
                     animationOptions: {
-                    duration: 758,
-                    easing: "linear",
-                    queue: false,
+                        duration: 758,
+                        easing: "linear",
+                        queue: false,
                     }
                 });
                 return false;
@@ -231,17 +232,17 @@
         }
     }
     popular_recype_click();
-    
-    
+
+
     $('.event_shedule time').countDown();
-    
-    
+
+
     /*----------------------------------------------------*/
     /*  Images grid Filter
-    /*----------------------------------------------------*/   
-    function ImagesgridFilter(){
-        if( $('.about_right_ms, .our_gallery_ms_inner').length ){
-            $('.about_right_ms, .our_gallery_ms_inner').imagesLoaded(function(){
+    /*----------------------------------------------------*/
+    function ImagesgridFilter() {
+        if ($('.about_right_ms, .our_gallery_ms_inner').length) {
+            $('.about_right_ms, .our_gallery_ms_inner').imagesLoaded(function () {
                 $('.about_right_ms, .our_gallery_ms_inner').isotope({
                     itemSelector: '.about_ms_item, .col-md-4, .col-sm-4',
                     layoutMode: 'masonry',
@@ -253,18 +254,18 @@
         }
     }
     ImagesgridFilter();
-    
+
     $("#my-calendar").zabuto_calendar({
         today: true,
     });
-    
-    
-    
+
+
+
     /*----------------------------------------------------*/
     /*  Google map js
     /*----------------------------------------------------*/
-    
-    if ( $('#mapBox').length ){
+
+    if ($('#mapBox').length) {
         var $lat = $('#mapBox').data('lat');
         var $lon = $('#mapBox').data('lon');
         var $zoom = $('#mapBox').data('zoom');
@@ -283,20 +284,106 @@
             disableDoubleClickZoom: true,
             mapTypeControl: false,
             zoom: $zoom,
-                styles: [{"featureType":"water","stylers":[{"saturation":43},{"lightness":-11},{"hue":"#0088ff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":99}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"lightness":54}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ece2d9"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ccdca1"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#767676"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#b8cb93"}]},{"featureType":"poi.park","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","stylers":[{"visibility":"simplified"}]}]
-            });
-        }
-    
-    
-    
+            styles: [{
+                "featureType": "water",
+                "stylers": [{
+                    "saturation": 43
+                }, {
+                    "lightness": -11
+                }, {
+                    "hue": "#0088ff"
+                }]
+            }, {
+                "featureType": "road",
+                "elementType": "geometry.fill",
+                "stylers": [{
+                    "hue": "#ff0000"
+                }, {
+                    "saturation": -100
+                }, {
+                    "lightness": 99
+                }]
+            }, {
+                "featureType": "road",
+                "elementType": "geometry.stroke",
+                "stylers": [{
+                    "color": "#808080"
+                }, {
+                    "lightness": 54
+                }]
+            }, {
+                "featureType": "landscape.man_made",
+                "elementType": "geometry.fill",
+                "stylers": [{
+                    "color": "#ece2d9"
+                }]
+            }, {
+                "featureType": "poi.park",
+                "elementType": "geometry.fill",
+                "stylers": [{
+                    "color": "#ccdca1"
+                }]
+            }, {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [{
+                    "color": "#767676"
+                }]
+            }, {
+                "featureType": "road",
+                "elementType": "labels.text.stroke",
+                "stylers": [{
+                    "color": "#ffffff"
+                }]
+            }, {
+                "featureType": "poi",
+                "stylers": [{
+                    "visibility": "off"
+                }]
+            }, {
+                "featureType": "landscape.natural",
+                "elementType": "geometry.fill",
+                "stylers": [{
+                    "visibility": "on"
+                }, {
+                    "color": "#b8cb93"
+                }]
+            }, {
+                "featureType": "poi.park",
+                "stylers": [{
+                    "visibility": "on"
+                }]
+            }, {
+                "featureType": "poi.sports_complex",
+                "stylers": [{
+                    "visibility": "on"
+                }]
+            }, {
+                "featureType": "poi.medical",
+                "stylers": [{
+                    "visibility": "on"
+                }]
+            }, {
+                "featureType": "poi.business",
+                "stylers": [{
+                    "visibility": "simplified"
+                }]
+            }]
+        });
+    }
+
+
+
     /*----------------------------------------------------*/
     /*Loading function*/
     /*----------------------------------------------------*/
-    
-    $(window).load(function() { // makes sure the whole site is loaded
-		 $('.loader').fadeOut(); // will first fade out the loading animation
-		 $('#preloader').delay(150).fadeOut('slow'); // will fade out the white DIV that covers the website.
-		 $('body').delay(150).css({'overflow':'visible'})
-     })
-    
+
+    $(window).load(function () { // makes sure the whole site is loaded
+        $('.loader').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(150).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(150).css({
+            'overflow': 'visible'
+        })
+    })
+
 })(jQuery)
